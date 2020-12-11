@@ -1,0 +1,29 @@
+/*
+ * Copyright (c) 2016 Samsung Electronics Co., Ltd.
+ *		http://www.samsung.com
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 as
+ * published by the Free Software Foundation.
+*/
+
+#include "exynos7870.dtsi"
+
+/ {
+	model = "Samsung A3Y17LTE board based on Exynos7870";
+	compatible = "samsung,a3y17lte", "samsung,exynos7870";
+
+	memory@40000000 {
+		device_type = "memory";
+		reg = <0x0 0x40000000 0x3E400000>;
+	};
+
+	memory@80000000 {
+		device_type = "memory";
+		reg = <0x0 0x80000000 0x40000000>;
+	};
+};
+
+&xxti {
+	clock-frequency = <26000000>;
+};
