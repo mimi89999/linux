@@ -28,9 +28,9 @@
 		#size-cells = <2>;
 		ranges;
 
-		ramoops@92000000 {
+		ramoops@46e00000 {
 			compatible = "ramoops";
-			reg = <0 0x92000000 0 0x8000>;
+			reg = <0 0x46e00000 0 0x8000>;
 			record-size = <0x4000>;
 			console-size = <0x4000>;
 		};
