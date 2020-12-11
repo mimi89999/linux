@@ -13,7 +13,7 @@
  * published by the Free Software Foundation.
  */
 
-
+/dts-v1/;
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 
 / {
